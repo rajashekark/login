@@ -8,4 +8,5 @@ import com.raj.login.logidemo.model.UserDetails;
 @Repository
 public interface UserDetailsRepository extends JpaRepository<UserDetails, Long> {
 
+
 }

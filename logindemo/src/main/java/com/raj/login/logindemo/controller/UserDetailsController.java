@@ -30,6 +30,8 @@ public class UserDetailsController {
 	
 	@RequestMapping(value="/saveUserDetails", method = RequestMethod.POST)
 	public UserDetails saveUserDetails(@RequestBody UserDetails userDetails) {
+		userDetails.setFirstName(userDetails.getFirstName());
+		userDetails.setLastName(userDetails.getLastName());
 		return userDetailsRepository.save(userDetails);
 	}
 	
